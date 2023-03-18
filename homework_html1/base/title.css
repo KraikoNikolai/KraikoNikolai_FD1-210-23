@@ -1,0 +1,21 @@
+.frame {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+h2 {
+    position: relative;
+}
+
+h2 span::before {
+    content: "";
+    background: url(circle_note.png) no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    left: -50px;
+    z-index: -1;
+}

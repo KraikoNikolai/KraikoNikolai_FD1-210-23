@@ -1,0 +1,51 @@
+a {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+td {
+    padding: 3px 15px;
+    border-right: red solid 2px;
+}
+
+td:last-child{
+    border-right: none;
+}
+
+h2{
+    text-align: center;
+}
+.flex div{
+    
+    display: flex;
+    
+}
+.flex div a{
+    padding: 10px;
+    border-right: padding-left:10px; margin-bottom: 3px;
+}
+
+.flex div a:nth-child(-n+4){
+    border-right:3px solid red;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 13%);
+    grid-template-rows: repeat(3, 30px);
+    grid-gap: 15px;
+    margin: 20px;
+
+}
+
+.grid a{
+    padding: 10px;
+    border-right:3px solid red;
+}
+
+.grid a:nth-child(5n-5){
+    border-right: none;
+}

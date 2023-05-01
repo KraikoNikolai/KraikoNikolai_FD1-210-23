@@ -1,0 +1,44 @@
+@keyframes bh{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 600px;
+    }
+} 
+@keyframes bg{
+    0%{
+        background: #000;
+    }
+    100%{
+        background: #999;
+    }
+} 
+@keyframes bord{
+    0%{
+        border-color: aquamarine;
+    }
+    100%{
+        border-color: coral;
+    }
+}
+.wrapper{
+    height: 100%;
+} 
+img{
+    position: relative;
+    left: 0;
+    animation: bh 3s ease infinite;
+}
+.bg{
+    height: 50px;
+    width: 100px;
+}
+.bord{
+    height: 50px;
+    width: 100px;
+    border: solid 3px red;
+}
+.wrapper:hover>div{
+    animation: bg 3s ease infinite, bord 3s ease infinite;
+}

@@ -6,44 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="css/maket_form.css">
 </head>
 
 <body>
-    <form action="">
+    <div class="wrapper">
+        <form action="#">
+            <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+            <div class="text">
+                <label for="#">Название статьи
+                    <input type="text">
+                </label>
+            </div>
 
-        <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
-        <label for="text">Название статьи: </label>
-        <input type="text" id="text">
+            <div class="sel">
+                <label for="sel">Рубрика:
+                    <select name="#" id="sel">
+                        <option value="#">программирование</option>
+                        <option value="#">дизайн</option>
+                        <option value="#">верстка</option>
+                    </select>
+                </label>
+            </div>
 
-        <br>
+            <div>
+                <label for="public">Публикация:
+                    <span class="radio"><input type="radio" name="public" class="fir">на сайте</span>
+                    <span class="radio"><input type="radio" name="public">в журнале</span>
+                    <span class="radio"><input type="radio" name="public">на сайте и в журнале</span>
+                </label>
+            </div>
 
-        <div class="sel"></div><label for="sel">Рубрика: </label>
-        <select name="#" id="sel">
-            <option value="#">программирование</option>
-            <option value="#">дизайн</option>
-            <option value="#">верстка</option>
-        </select></div>
-        <br>
+            <div>
+                <label for="check">Разрешить комментарии:
+                    <input type="checkbox" id="check">
+                </label>
+            </div>
+            <label for="te">Текст статьи:</label>
+            <textarea name="" id="te" cols="40" rows="5"></textarea>
 
-        <div class="public"><label for="public">Публикация: </label>
-            <input type="radio" name="public">на сайте
-            <input type="radio" name="public">в журнале
-            <input type="radio" name="public">на сайте и в журнале
-        </div><br>
 
-        <div class="check"><label for="check">Разрешить комментарии:</label>
-            <input type="checkbox" id="check">
-        </div><br>
+            <button>Опубликовать</button>
 
-        <div class="te"><label for="te">Текст статьи:</label>
-            <textarea name="" id="te" cols="30" rows="10"></textarea>
-        </div><br>
 
-        <button>Опубликовать</button>
-
+    </div>
     </form>
-
 </body>
 
 </html>

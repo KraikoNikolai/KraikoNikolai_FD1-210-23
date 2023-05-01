@@ -1,0 +1,51 @@
+html,
+body {
+    height: 100%;
+}
+h1{
+    text-align: center;
+}
+
+img{
+    float: left; 
+    margin: 0px 15px 0px 0px; 
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: aquamarine;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.body{
+    display: flex;
+
+}
+
+.menu{
+    flex-grow: 2;
+    background: yellow;
+    padding: 20px 20px 20px 10px;
+}
+
+.content{
+    flex-grow: 3;
+    padding: 20px;
+    background: url(../pictures/boll.png) right repeat-y;
+}
+
+.footer{
+    background-color: aquamarine;
+    font-size: 18px; 
+    padding: 15px; 
+    text-align: center;
+}

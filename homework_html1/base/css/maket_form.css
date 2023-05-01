@@ -1,0 +1,54 @@
+div{
+    width: 100%;
+    margin-bottom: 6px;
+}
+input[type="text"]{
+    margin-left: 100px;
+    width: 300px;
+}
+
+select{
+    margin-left: 154px;
+    width: 308px;
+}
+
+.fir{
+    margin-left: 127px;
+}
+
+[type="checkbox"]{
+    margin-left: 43px;
+}
+
+textarea{
+    width: 100%;
+}
+
+@media (max-width: 900px){
+    input[type="text"]{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    select{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .fir{
+        margin-left: 5px;
+    }
+    .radio{
+        display: block;
+    }
+    
+    [type="checkbox"]{
+        margin-left: 10px;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    
+    
+}

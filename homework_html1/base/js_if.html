@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Hello, world!</h2>
+    <script>
+
+        var last = prompt("Ваша фамилия");
+        var first = prompt("Ваше имя");
+        var father = prompt("Ваше отчество");
+        var age = prompt("Возраст в годах");
+        var gender = confirm("Ваш пол - мужской?");
+        var retired = "нет";
+
+
+
+        if (age > 64 && gender === false) {
+            retired = "да";
+        }
+        if (age > 66 && gender === true) {
+            retired = "да";
+        }
+
+        if (gender === true) {
+            gender = "мужской";
+        }
+        else {
+            gender = "женский";
+        }
+        var age_days = age * 365;
+
+        alert(`ваше ФИО: ${last} ${first} ${father} \nваш возраст в годах: ${age} \nваш возраст в днях: ${age_days} \nчерез 5 лет вам будет: ${parseInt(age) + 5} \nваш пол: ${gender} вы на пенсии: ${retired}`)
+
+    </script>
+</body>
+
+</html>

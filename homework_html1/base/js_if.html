@@ -15,16 +15,19 @@
         var last = prompt("Ваша фамилия");
         var first = prompt("Ваше имя");
         var father = prompt("Ваше отчество");
-        var age = prompt("Возраст в годах");
+        do {
+            var age = prompt("Возраст в годах");
+            age = Number(age);
+        } while (isNaN(age));
         var gender = confirm("Ваш пол - мужской?");
         var retired = "нет";
 
 
 
-        if (age > 64 && gender === false) {
+        if (age > 58 && gender === false) {
             retired = "да";
         }
-        if (age > 66 && gender === true) {
+        if (age > 63 && gender === true) {
             retired = "да";
         }
 
@@ -36,7 +39,12 @@
         }
         var age_days = age * 365;
 
-        alert(`ваше ФИО: ${last} ${first} ${father} \nваш возраст в годах: ${age} \nваш возраст в днях: ${age_days} \nчерез 5 лет вам будет: ${parseInt(age) + 5} \nваш пол: ${gender} вы на пенсии: ${retired}`)
+        alert(`ваше ФИО: ${last} ${first} ${father} 
+        ваш возраст в годах: ${age} 
+        ваш возраст в днях: ${age_days} 
+        через 5 лет вам будет: ${parseInt(age) + 5}
+        ваш пол: ${gender} 
+        вы на пенсии: ${retired}`)
 
     </script>
 </body>

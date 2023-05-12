@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100%;
+}
+h1{
+    text-align: center;
+}
+
+img{
+    float: left; 
+    margin: 0px 15px 0px 0px; 
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: aquamarine;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.body{
+    display: flex;
+
+}
+
+.menu{
+    width: 20%;
+    background: url(../pictures/ball3.png) right top no-repeat,
+    url(../pictures/ball3.png) right bottom no-repeat,
+    url(../pictures/ball3.png) left top no-repeat,
+    url(../pictures/ball3.png) left bottom no-repeat;
+    padding: 20px 20px 20px 10px;
+    background-color: cadetblue;
+}
+
+.content{
+    
+    width: 60%;
+    background:
+    url(../pictures/ball3.png) right top no-repeat,
+    url(../pictures/ball3.png) right bottom no-repeat,
+    url(../pictures/ball3.png) left top no-repeat,
+    url(../pictures/ball3.png) left bottom no-repeat;
+    background-color: bisque;
+}
+.right{
+    width: 20%;
+    background: url(../pictures/ball3.png) right top no-repeat,
+    url(../pictures/ball3.png) right bottom no-repeat,
+    url(../pictures/ball3.png) left top no-repeat,
+    url(../pictures/ball3.png) left bottom no-repeat;
+    background-color: rgb(238, 80, 167);
+}
+.footer{
+    background-color: aquamarine;
+    font-size: 18px; 
+    padding: 15px; 
+    text-align: center;
+}
+/* @media (max-width: 900px){
+    .header{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .menu{
+        background: none;
+    }
+    .content{
+        background: none;
+    }
+    li{
+        list-style-type: none;
+        display: inline;
+    }
+    .body{
+        flex-direction: column-reverse;
+    }
+} */

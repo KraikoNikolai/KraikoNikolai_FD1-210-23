@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 600px;
+            height: 800px;
+            position: relative;
+            margin: auto;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        .front {
+            z-index: 1;
+            top: 313px;
+            left: 39px;
+        }
+
+        .big {
+            z-index: -1;
+        }
+
+        .wrapper:hover .small {
+            transform: translateY(-200px);
+            transition: 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="./pictures/tefal-part-removebg-preview.png" alt="#" class="front">
+        <img src="./pictures/tefal_big-removebg-preview.png" alt="#" class="big">
+        <img src="./pictures/tefal_small-removebg-preview.png" alt="#" class="small">
+    </div>
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -489,6 +490,22 @@ body {
 
 .map__item {
   color: #0066FF;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 10px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: rgb(141, 96, 96);
+  content: "/ ";
 }
 
 @media (max-width: 1180px) {

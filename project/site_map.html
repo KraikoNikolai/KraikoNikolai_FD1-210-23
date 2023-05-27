@@ -5,22 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start</title>
+    <title>Site map</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header header-main">
+        <header class="header">
             <div class="container">
                 <div class="header__inner">
                     <a href="index.html" class="logo">
-                        <img src="pictures/logo.svg" title="link" alt="logo" class="logo__img">
+                        <img src="pictures/logo.svg" alt="logo" class="logo__img" title="link">
                     </a>
                     <nav class="menu">
                         <button class="menu__btn">
@@ -50,28 +49,26 @@
             </div>
         </header>
         <main class="main">
-            <section class="top">
-                <div class="container">
-                    <h1 class="title">
-                        Leasing From D&M
-                    </h1>
-                    <a href="new-car.html" title="link" class="top__link">
-                        FIND A CAR
-                    </a>
-                </div>
-            </section>
-            <div class="slider">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide a1"></div>
-                        <div class="swiper-slide a2"></div>
-                        <div class="swiper-slide a3"></div>
-                        <div class="swiper-slide a4"></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
+            <div class="container">
+                <h1 style="text-align: center;">SITE MAP</h1>
+                <ul>
 
+                    <a href="index.html" title="link" class="map__item">
+                        <h3>HOMEPAGE</h3>
+                    </a>
+
+                    <li><a href="new-car.html" title="link" class="map__item">
+                            <H3>NEW CARS</H3>
+                        </a></li>
+                    <li><a href="Why_lease.html" title="link" class="map__item">
+                            <H3>WHY LEASE</H3>
+                        </a></li>
+                    <li><a href="contacts.html" title="link" class="map__item">
+                            <H3>CONTACTS</H3>
+                        </a></li>
+                </ul>
+
+            </div>
         </main>
         <footer class="footer">
             <div class="container">
@@ -126,7 +123,8 @@
                         <li class="footer__menu_item"><a href="ups404.html" title="link" class="footer__menu_link">
                                 Team
                             </a></li>
-                        <li class="footer__menu_item"><a href="site_map.html" title="link" class="footer__menu_link">
+                        <li class="footer__menu_item"><a href="site_map.html" title="link"
+                                class="footer__menu_link menu__list_link--active">
                                 Site map
                             </a></li>
                     </ul>
@@ -173,7 +171,6 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
